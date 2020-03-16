@@ -1,7 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-import TestAsync from "./components/TestAsync";
+import PropsToState from "./components/PropsToState";
 
-
-ReactDOM.render(<TestAsync inputdata="dfsj" />,  document.getElementById("root"))
+ReactDOM.render(<PropsToState />,  document.getElementById("root"))

@@ -1,44 +1,21 @@
 import React from "react";
 
-function Employee() {
-    this.name = "Mayank"
-    this.age = 10
-}
-
-
-Employee.prototype.getDetails = function() {
-    console.log(this.name)
-}
-
-Employee.prototype.getDetails = function() {
-    this.name = age + 1
-}
-
-
-
 export default class TimerWithClass extends React.Component {
-
-    
-
     constructor() {
         super();
         this.state = {
-            employeeData: new Employee()
+            timer: new Date().getSeconds()
         }
-
-        setTimeout(() => {
-            this.setState({})
-        }, 1000)    
-
-
+        setInterval(() => {
+            this.setState({
+                timer: new Date().getSeconds()
+            })
+        }, 1000);
     }
-
-    
-
     render() {
         return (
             <div>
-                <h2>Hello World...{this.state.employeeData.age}</h2>
+                <h2>Timer: {this.state.timer}</h2>
             </div>
         )
     }
