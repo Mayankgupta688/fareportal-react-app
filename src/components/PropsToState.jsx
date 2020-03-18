@@ -14,15 +14,13 @@ export default class PropsToState extends React.Component {
             that.setState({
                 timer: new Date().getSeconds()
             })
-        }, 1000)
+        }, 1000);
 
         setInterval(function() {
             that.setState({
                 name: "Anshul"
             })
-        }, 5000)
-
-        
+        }, 5000); 
     }
 
     render() {

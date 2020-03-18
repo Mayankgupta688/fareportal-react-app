@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-import PropsToState from "./components/PropsToState";
+import IterateData from "./components/IterateData";
 
-ReactDOM.render(<PropsToState />,  document.getElementById("root"))
+ReactDOM.render(<IterateData />,  document.getElementById("root"))
