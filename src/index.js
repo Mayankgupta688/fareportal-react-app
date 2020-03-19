@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-import IterateData from "./components/IterateData";
+import ShouldComponentUpdate from "./components/ShouldComponentUpdate";
 
-ReactDOM.render(<IterateData />,  document.getElementById("root"))
+ReactDOM.render(<ShouldComponentUpdate username="skhgdjsa" />,  document.getElementById("root"))
