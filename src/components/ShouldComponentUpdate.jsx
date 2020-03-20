@@ -1,8 +1,7 @@
 import React from 'react';
 
-export default class  extends React.Component {
+export default class ShouldComponentUpdate extends React.Component {
     constructor() {
-        debugger;
         super();
         this.state = {
             counter: 0
@@ -10,24 +9,25 @@ export default class  extends React.Component {
     }
 
     componentDidMount() {
-        setInterval(() => {
-            debugger;
-            this.setState({
-                counter: this.state.counter + 1
-            })
-        }, (1000));
+        this.state.counter = 100;
+        console
+    }
+
+    updateCounter() {
+        this.forceUpdate();
     }
 
     shouldComponentUpdate(updatedProps, updatedState) {
-        debugger;
-        if(updatedState.counter % 3 == 0) {
-            return true;
-        }
-        return false;
+        return true;
     }
 
     render() {
-        debugger;
-        return <h1>Counter: {this.state.counter}</h1>
+        return (
+            <>
+                <h1>Counter: {this.state.counter}</h1>
+                <h1>Counter Value: {this.state.counter}</h1>
+                <input type="button" onClick={this.updateCounter} value="Click to Update" />
+            </>
+        )
     }
 }

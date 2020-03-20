@@ -1,6 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-import ShouldComponentUpdate from "./components/ShouldComponentUpdate";
+import ComponentInheritence from "./components/ComponentInheritence";
 
-ReactDOM.render(<ShouldComponentUpdate username="skhgdjsa" />,  document.getElementById("root"))
+ReactDOM.render((
+    <>
+        <ComponentInheritence>
+        </ComponentInheritence>
+    </>
+),  document.getElementById("root"))
